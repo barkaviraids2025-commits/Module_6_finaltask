@@ -1,0 +1,58 @@
+{
+  "best_model": "Logistic Regression",
+  "models": {
+    "Naive Bayes": {
+      "best_params": {
+        "alpha": 0.1
+      },
+      "cv_f1": 0.9238,
+      "test_accuracy": 0.9836,
+      "test_precision": 0.975,
+      "test_recall": 0.8931,
+      "test_f1": 0.9323
+    },
+    "Logistic Regression": {
+      "best_params": {
+        "C": 10
+      },
+      "cv_f1": 0.9297,
+      "test_accuracy": 0.9778,
+      "test_precision": 0.9154,
+      "test_recall": 0.9084,
+      "test_f1": 0.9119
+    },
+    "Linear SVM": {
+      "best_params": {
+        "estimator__C": 1
+      },
+      "cv_f1": 0.9276,
+      "test_accuracy": 0.9768,
+      "test_precision": 0.935,
+      "test_recall": 0.8779,
+      "test_f1": 0.9055
+    }
+  },
+  "confusion": {
+    "true_ham": 892,
+    "false_spam": 11,
+    "missed_spam": 12,
+    "caught_spam": 119
+  },
+  "top_spam_words": [
+    "txt",
+    "uk",
+    "mobile",
+    "www",
+    "50",
+    "claim",
+    "150p",
+    "reply"
+  ],
+  "misclassified_examples": [
+    "Your daily text from me \u2013 a favour this time",
+    "Want explicit SEX in 30 secs? Ring 02073162414 now! Costs 20p/min Gsex POBOX 2667 WC1N 3XX",
+    "You will recieve your tone within the next 24hrs. For Terms and conditions please see Channel U Teletext Pg 750",
+    "ASKED 3MOBILE IF 0870 CHATLINES INCLU IN FREE MINS. INDIA CUST SERVs SED YES. L8ER GOT MEGA BILL. 3 DONT GIV A SHIT. BAILIFF DUE IN DAYS. I O \u00a3250 3 WANT \u00a3800",
+    "Are you free now?can i call now?"
+  ]
+}
